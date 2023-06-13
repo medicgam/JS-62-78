@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>zad74</title>
+ <script language="JavaScript">
+var pocz_red=50;
+var tekst_red="Adam Redzimski";
+var x=prompt("podaj 1 liczbe o przedziałe <20,60> l1=","");
+var l1_t_red=x;
+if(l1_t_red<20 || l1_t_red>60)
+ {
+    document.write("liczba l1 nie należy do przedziału <20,60>.");
+
+ }
+
+ else{
+var y=prompt("podaj 2 liczbe o przedziałe <20,60> l2=","");
+var l2_t_red=y;
+ if(l2_t_red<20 || l2_t_red>60)
+ {
+    document.write("liczba l2 nie należy do przedziału <20,60>.");
+
+ }
+ else{
+   if(l1_t_red>l2_t_red)
+ {
+    for ( var i=pocz_red; i>0; i--)
+ {
+   if(i%5==0)
+   {
+    document.write("<p style=\"font-size:"+pocz_red+"px; color: black;\"><br>"+tekst_red+"<br></p>");
+    pocz_red=pocz_red-5;
+   }
+
+ }
+ }
+   if(l1_t_red<l2_t_red)
+ {
+    for ( var i=pocz_red; i<100; i++)
+ {
+   if(i%5==0)
+   {
+    document.write("<p style=\"font-size:"+pocz_red+"px; color: black;\"><br>"+tekst_red+"<br></p>");
+    pocz_red=pocz_red+5;
+   }
+ }
+ }
+
+
+
+
+
+
+
+ }
+
+
+
+ }
+
+
+
+
+
+
+
+ </script>
+</head>
+<body>
+</body>
+</html>

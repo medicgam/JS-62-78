@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 74 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:redz_zad74.html</h3>
+<div>
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;zad74&lt;/title&gt;
+ &lt;script language="JavaScript"&gt;
+var pocz_red=50;
+var tekst_red="Dowolny tekst";
+var x=prompt("podaj 1 liczbe o przedziałe &lt;20,60&gt; l1=","");
+var l1_t_red=x;
+if(l1_t_red&lt;20 || l1_t_red&gt;60)
+ {
+    document.write("liczba l1 nie należy do przedziału &lt;20,60&gt;.");
+
+ }
+
+ else{
+var y=prompt("podaj 2 liczbe o przedziałe &lt;20,60&gt; l2=","");
+var l2_t_red=y;
+ if(l2_t_red&lt;20 || l2_t_red&gt;60)
+ {
+    document.write("liczba l2 nie należy do przedziału &lt;20,60&gt;.");
+
+ }
+ else{
+   if(l1_t_red&gt;l2_t_red)
+ {
+    for ( var i=pocz_red; i&gt;0; i--)
+ {
+   if(i%5==0)
+   {
+    document.write("&lt;p style=\"font-size:"+pocz_red+"px; color: black;\"&gt;&lt;br&gt;"+tekst_red+"&lt;br&gt;&lt;/p&gt;");
+    pocz_red=pocz_red-5;
+   }
+
+ }
+ }
+   if(l1_t_red&lt;l2_t_red)
+ {
+    for ( var i=pocz_red; i&lt;100; i++)
+ {
+   if(i%5==0)
+   {
+    document.write("&lt;p style=\"font-size:"+pocz_red+"px; color: black;\"&gt;&lt;br&gt;"+tekst_red+"&lt;br&gt;&lt;/p&gt;");
+    pocz_red=pocz_red+5;
+   }
+ }
+ }
+
+
+
+
+
+
+ }
+
+
+ }
+
+
+
+
+
+
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+<hr> 
+</pre>
+</div>
+</body>
+</html>

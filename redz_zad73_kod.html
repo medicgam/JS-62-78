@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 73 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:redz_zad73.html</h3>
+<div>
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;zad73&lt;/title&gt;
+ &lt;script language="JavaScript"&gt;
+var x=prompt("podaj Nazwisko=","");
+var b_red=x.length;
+var y=prompt("podaj Imie=","");
+var a_red=y.length;
+b_red=b_red%4+5;
+a_red=a_red%6+20;
+ for ( var i=1; i&lt;=b_red; i++)
+ {
+ document.write("*");
+ }
+
+ document.write("&lt;br&gt;");
+    var wiersz_red="*";
+    for ( var j=1; j&lt;=(b_red-2); j++)
+ {
+    wiersz_red=wiersz_red+"&nbsp&nbsp";
+ }
+ wiersz_red=wiersz_red+"*";
+ for ( var j=1; j&lt;=(a_red-2); j++)
+ {
+ document.write(wiersz_red);
+ document.write("&lt;br&gt;");
+ }
+ for ( var i=1; i&lt;=b_red; i++)
+ {
+ document.write("*");
+ }
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+
+
+
+<hr> 
+</pre>
+</div>
+</body>
+</html>
